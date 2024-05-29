@@ -1,0 +1,22 @@
+{
+    "label": "nodeUI Deployment Policy",
+    "description": "A Horizon Deployment Policy example to run nodeUI",
+    "service": {
+      "name": "nodeUI",
+      "org": "examples",
+      "arch": "*",
+      "serviceVersions": [
+        {
+          "version": "1.0.0",
+          "priority":{}
+        }
+      ]
+    },
+    "properties": [
+    ],
+    "constraints": [
+      "example == nodeUI"
+    ],
+    "userInput": []
+  }
+  

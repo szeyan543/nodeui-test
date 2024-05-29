@@ -1,0 +1,9 @@
+{
+    "properties": [
+      { "name": "example", "value": "nodeUI" }
+    ],
+    "constraints": [
+      "itsdangerous != 2.1.2"
+    ]
+  }
+  
