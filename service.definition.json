@@ -1,6 +1,8 @@
 {
     "org": "$HZN_ORG_ID",
     "label": "$SERVICE_NAME for $ARCH",
+    "description": "A simple HTTP service to create browser and return a list of Open Horizon services running on the local computer.",
+    "documentation": "https://github.com/szeyan543/nodeui-test/main/README.md",
     "url": "$SERVICE_NAME",
     "version": "$SERVICE_VERSION",
     "arch": "$ARCH",
@@ -12,8 +14,11 @@
         "services": {
             "$SERVICE_NAME": {
                 "image": "$SERVICE_CONTAINER",
-                "ports": [ 
-                    { "HostIP": "0.0.0.0", "HostPort": "8000:8000/tcp" }
+                "ports": [
+                    {
+                        "HostIP": "0.0.0.0",
+                        "HostPort": "8000:8000/tcp"
+                    }
                 ]
             }
         }

@@ -1,22 +1,29 @@
 {
-    "label": "nodeUI Deployment Policy",
-    "description": "A Horizon Deployment Policy example to run nodeUI",
-    "service": {
-      "name": "nodeUI",
-      "org": "examples",
-      "arch": "*",
-      "serviceVersions": [
-        {
-          "version": "1.0.0",
-          "priority":{}
-        }
-      ]
-    },
-    "properties": [
-    ],
-    "constraints": [
-      "example == nodeUI"
-    ],
-    "userInput": []
-  }
-  
+  "label": "$SERVICE_NAME Deployment Policy",      
+  "description": "Policy to auto deploy $SERVICE_NAME",
+  "service": {       
+    "name": "$SERVICE_NAME",
+    "org": "$HZN_ORG_ID",    
+    "arch": "*",    
+    "serviceVersions": [ 
+      {
+        "version": "$SERVICE_VERSION",
+        "priority":{}
+      }
+    ]
+  },
+  "properties": [
+  ],
+  "constraints": [ 
+       "purpose == learning",
+       "preferredLanguage == GoLang"
+  ], 
+  "userInput": [ 
+    {            
+      "serviceOrgid": "$HZN_ORG_ID",
+      "serviceUrl": "$SERVICE_NAME",
+      "serviceVersionRange": "[0.0.0,INFINITY)",
+      "inputs": []
+    }
+  ]
+}  

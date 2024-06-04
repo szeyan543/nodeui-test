@@ -1,0 +1,6 @@
+{
+    "properties": [],
+    "constraints": [
+        "preferredLanguage == GoLang AND purpose == learning"
+    ]
+}

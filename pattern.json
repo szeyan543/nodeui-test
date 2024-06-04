@@ -1,26 +1,11 @@
 {
-    "label": "$PATTERN_NAME",
-    "description": "Pattern for $SERVICE_NAME",
-    "public": false,
+    "name": "$PATTERN_NAME",
     "services": [
-        {
-            "serviceUrl": "$SERVICE_NAME",
-            "serviceOrgid": "$HZN_ORG_ID",
-            "serviceArch": "$ARCH",
-            "serviceVersions": [
-                {
-                    "version": "$SERVICE_VERSION",
-                    "priority": {
-                        "priority_value": 50,
-                        "retries": 1,
-                        "retry_durations": 3600
-                    }
-                }
-            ],
-            "dataVerification": {
-                "enabled": false
-            }
-        }
+      {
+        "serviceUrl": "$SERVICE_NAME",
+        "serviceOrgid": "$HZN_ORG_ID",
+        "serviceArch": "$ARCH",
+        "serviceVersions": [ { "version": "$SERVICE_VERSION" } ]
+      }
     ]
-}
-
+  }
