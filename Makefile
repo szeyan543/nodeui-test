@@ -46,7 +46,6 @@ publish-deployment-policy:
 	hzn exchange deployment addpolicy -f deployment.policy.json $(HZN_ORG_ID)/policy-$(SERVICE_NAME)_$(SERVICE_VERSION)
 	@echo ""
 
-test: @curl -sS http://127.0.0.1:8000
 
 push:
 	docker push $(SERVICE_CONTAINER)
