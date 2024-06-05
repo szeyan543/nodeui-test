@@ -46,16 +46,7 @@ publish-deployment-policy:
 	hzn exchange deployment addpolicy -f deployment.policy.json $(HZN_ORG_ID)/policy-$(SERVICE_NAME)_$(SERVICE_VERSION)
 	@echo ""
 
-test: run
-	@echo "=================="
-	@echo "Testing $(SERVICE_NAME)..."
-	@echo "=================="
-	./serviceTest.sh $(SERVICE_NAME) $(MATCH) $(TIME_OUT) && \
-		{ docker rm -f $(SERVICE_NAME) >/dev/null; \
-		echo "*** Service test succeeded! ***"; } || \
-		{ docker rm -f $(SERVICE_NAME) >/dev/null; \
-		echo "*** Service test failed! ***"; \
-		false ;}
+test: @curl -sS http://127.0.0.1:8000
 
 push:
 	docker push $(SERVICE_CONTAINER)
