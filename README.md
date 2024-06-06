@@ -31,7 +31,6 @@ To play with this outside of Open Horizon, you can use the following commands:
 make build
 make run
 ...
-make test
 make stop
 ```
 
