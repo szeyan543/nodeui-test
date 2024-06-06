@@ -93,12 +93,15 @@ stop:
 clean:
 	@docker rmi -f $(DOCKER_HUB_ID)/$(SERVICE_NAME):$(SERVICE_VERSION) >/dev/null 2>&1 || :
 
+test:
+	@curl -sS http://127.0.0.1:8000
+	
 agent-run:
 	@echo "================"
 	@echo "REGISTERING NODE"
 	@echo "================"
 	hzn register --policy=node.policy.json
-	@watch hzn agreement list
+	hzn agreement list
 
 agent-run-pattern:
 	hzn register --pattern "${HZN_ORG_ID}/$(PATTERN_NAME)"
