@@ -41,4 +41,4 @@ def index():
     return response
 
 if __name__ == '__main__':
-    app.run(host="WEB_SERVER_BIND_ADDRESS", port=WEB_SERVER_PORT)
+    app.run(host=WEB_SERVER_BIND_ADDRESS, port=WEB_SERVER_PORT)
