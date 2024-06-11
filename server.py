@@ -4,7 +4,7 @@ import requests
 WEB_SERVER_BIND_ADDRESS = '0.0.0.0'
 WEB_SERVER_PORT = 8000
 
-LOCAL_AGENT_URL = 'http://localhost:8081/service'
+LOCAL_AGENT_URL = 'http://localhost:8510/service'
 
 app = Flask('node-ui')
 
