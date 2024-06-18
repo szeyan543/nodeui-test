@@ -1,6 +1,0 @@
-{
-    "properties": [],
-    "constraints": [
-        "preferredLanguage == none AND purpose == learning"
-    ]
-}

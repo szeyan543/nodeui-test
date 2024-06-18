@@ -50,7 +50,7 @@ publish-deployment-policy:
 push:
 	docker push $(SERVICE_CONTAINER)
 
-publish: publish-service publish-service-policy publish-deployment-policy
+publish: publish-service publish-deployment-policy
 
 publish-service:
 	@echo "=================="
