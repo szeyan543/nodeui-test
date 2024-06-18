@@ -15,8 +15,7 @@
   "properties": [
   ],
   "constraints": [ 
-       "purpose == learning",
-       "preferredLanguage == GoLang"
+       "example == nodeUI"
   ], 
   "userInput": [ 
     {            
