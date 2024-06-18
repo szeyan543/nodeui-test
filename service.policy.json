@@ -1,6 +1,6 @@
 {
     "properties": [],
     "constraints": [
-        "preferredLanguage == Python3 AND purpose == learning"
+        "preferredLanguage == none AND purpose == learning"
     ]
 }
