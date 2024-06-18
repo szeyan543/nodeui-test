@@ -1,6 +1,17 @@
 {
   "properties": [
-    { "name": "example", "value": "nodeUI" }
-  ],
+  {
+    "name": "openhorizon.allowPrivileged",
+    "value": false
+  },
+  {
+    "name": "purpose",
+    "value": "learning"
+  },
+  {
+    "name": "preferredLanguage",
+    "value": "Python"
+  }
+],
 "constraints": []
 }  

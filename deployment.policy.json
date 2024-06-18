@@ -15,7 +15,8 @@
   "properties": [
   ],
   "constraints": [ 
-       "example == nodeUI"
+       "purpose == learning",
+        "preferredLanguage == Python"
   ], 
   "userInput": [ 
     {            

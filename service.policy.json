@@ -1,6 +1,6 @@
 {
     "properties": [],
     "constraints": [
-        "example == nodeUI"
+        "preferredLanguage == Python AND purpose == learning"
     ]
 }
