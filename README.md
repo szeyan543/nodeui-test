@@ -1,9 +1,5 @@
 # Node UI Service
 
-![License](https://img.shields.io/github/license/open-horizon-services/web-helloworld-python)
-![Architecture](https://img.shields.io/badge/architecture-x86,arm64-green)
-![Contributors](https://img.shields.io/github/contributors/open-horizon-services/web-helloworld-python.svg)
-
 This Open Horizon service demonstrates a simple HTTP server written in Python using Flask. The server returns a list of Open Horizon services running on the local computer and responds on port 8000.
 
 ## Prerequisites
